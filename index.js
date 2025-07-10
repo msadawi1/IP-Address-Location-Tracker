@@ -36,7 +36,6 @@ app.post("/", async (req, res) => {
                 ip: req.body.ip,
             }
         })
-        console.log(response);
         const data = {
             country: response.data.country_name,
             state: response.data.region_name,
